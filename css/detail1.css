@@ -1,0 +1,448 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-img {  
+    width: 33%;
+    border: 1px solid black;
+    
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-detail {
+    display: none;
+    width: 45%;
+    padding: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 20px;
+}
+
+.product-review {
+    display: none;
+    width: 45%;
+    border-radius: 20px;
+    padding: 20px;  
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.product-detail.activate {
+    display: block;
+}
+.product-review.activate {
+    display: block;
+}
+
+
+.product-detail .vote i {
+    color: #edbb0e;
+}
+
+.product-detail h1 {
+    font-size: 3rem;
+}
+.product-detail i {
+    font-size: 2rem;
+}
+
+.product-detail .price {
+    font-size: 2.5rem;
+    font-weight: bold;;
+    color: red;
+}
+
+.product-detail p {
+    font-size: 1.5rem;
+    color: #a2a499;
+}
+
+.product-detail_btn {
+    display: flex;
+}
+
+.product-detail_btn  form button{
+    margin-left: 30px;
+    background-color: #219150;
+    color: white;
+    height: 40px;
+    padding: 3px;
+    width: 120px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.product-detail .control button, .product-detail .control input {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    font-size: 15px;
+    color: #736f6f;
+    background-color: #f5f5f5;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 100px;
+    margin-left: 750px;
+}
+
+.menu button {
+    width: 150px;
+    cursor: pointer;
+    background-color: white;
+    color: #219150;
+    border: 2px solid #219150;
+    padding: 3px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.menu button.activate {
+    background-color: #219150;
+    color: white;
+}
+
+.product-review .title {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.product-review {
+    position: relative;
+}
+
+.product-review form {
+    position: absolute;
+    bottom: 20px;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_hidden input[type='text']{
+    border: 1px solid #999;
+    border-radius: 17.5px;
+    width: 85%;
+    height: 45px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.form_hidden input[type='submit']{
+    background-color: #219150;
+    color: white;
+    border-radius: 10px;
+    width: 13%;
+    height: 45px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form_comment-input-btn .star_comment {
+    margin: 10px 0;
+}
+
+.form_comment-input-btn .star_comment i {
+    border: 2px solid black;
+    font-size: 20px;    
+    color: white;
+    background-color: #999999;
+    cursor: pointer;
+    padding:5px;
+}
+
+.form_comment-input-btn .star_comment i.activate {
+    color: #FFCC00;
+}
+
+.list_comment {
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    height: 45.275px;
+}
+
+.comment_line {
+    width: 100%;
+    height: 1px;
+    background-color: #999; 
+    margin: 15px 0;
+}
+
+.comment .avatas {
+    width: 7%;
+    height:100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.comment .person {
+    width: 25%;
+    font-size: 16px;
+    height: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.person .star i {
+    color: #edbb0e;
+}
+
+.comment .person span {
+    color: #CC0000;
+}
+
+.comment .content {
+    margin-top: 0;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.comment .content p {
+    font-size: 16px;
+    color: #736f6f;
+    position: absolute;
+    cursor: default;
+    left: 10px;
+}
+
+.comment_sl {
+    margin: 80px 80px 0 80px;
+    font-size: 18px;
+    font-family: sans-serif;
+    display: flex;
+    height: 30px;
+}
+
+.comment_sl .number_comment {
+    margin-right: 30px;
+}
+
+.comment_sl .sort_comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.comment_sl .sort_comment i{
+    margin-right: 5px;
+}
+
+.form_comment {
+    margin: 20px 80px 0 80px;
+}
+
+.list_review {
+    margin-top: 20px;
+}
+
+.review {
+    position: relative;
+    margin: 20px 80px;
+    border-bottom: 1px solid #999;
+}
+
+.review .info {
+    display: flex;
+}
+
+.review .avatas {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.review .person {
+    margin: 10px 0 10px 20px; 
+    font-size: 18px;
+    height: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    color: #d0011b;
+}
+
+
+.review .content_review {
+    margin: 0 0 10px 79px;
+    font-size: 16px;
+}
+
+.review .interac{
+    margin: 10px 0 10px 79px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.review .reply{
+    margin-left: 100px;
+}
+
+
+.review .reply .avatas {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.review .reply .person {
+    font-size: 16px;
+    margin: 5px;
+}
+
+.review .reply .time {
+    font-size: 14px;
+    margin: 5px;
+}
+
+.review .reply .content_review {
+    font-size: 14px;
+    margin: 5px;
+    margin-left: 65px;
+}
+
+
+.name_person {
+    position: relative;
+}
+
+.new_time {
+    position: absolute;
+    top: 4px;
+    right: -220px;
+    color: #767e89;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.interac .dislike {
+    margin: 0 5px;
+}
+
+.form_comment-input {
+    display: flex;
+    flex-direction: column;
+    min-height: 90.8px;
+
+}
+
+.form_comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_comment input[type='text'] {
+    border-bottom: 0.5px solid #999 ;
+    font-size: 16px;
+    padding: 3px;
+    width: 1280px;
+}
+
+.form_comment .avatas {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+
+.form_comment input[type='text'].activate {
+    border-bottom: 0.5px solid black ;
+}
+
+.form_comment-input-btn {
+    flex-direction: row;
+    margin-top: 20px;
+    text-align: end;
+    display: none;
+}
+
+.form_comment-input-btn div {
+    display: inline;
+    margin: 0 5px;
+}
+
+.form_comment-input-btn .star_comment {
+    margin-right: 10px;
+}
+
+.form_comment-input-btn.activate {
+    display: block;
+}
+
+.form_comment-input-btn button, .form_comment-input-btn input {
+    width: 90px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #219150;
+    color: white;
+    padding: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form_comment-input-btn input {
+    background-color: #999;
+}
+
+.form_comment-input-btn input.activate {
+    background-color: #219150;
+}
