@@ -28,6 +28,7 @@ if ($_SESSION['login_active'] == 1) { ?>
         <ul class="icon_user-ul">
             <li class="icon_user-li"> My infomation</li>
             <li class="icon_user-li"> My cart</li>
+            <li class="icon_user-li"> <a href="myorder.php">My orders</a></li>
             <li class="icon_user-li"> <a href="logout.php" id="cart">Log out</a></li>
         </ul>
     </div>

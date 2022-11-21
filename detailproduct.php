@@ -45,7 +45,7 @@ if (isset($_POST['tienhanhcomment'])) {
 <head>
     <?php include('head.php') ?>
 
-    <link rel="stylesheet" href="css/detail1.css">
+    <link rel="stylesheet" href="css/detail.css">
 </head>
 
 <body>
@@ -155,11 +155,33 @@ if (isset($_POST['tienhanhcomment'])) {
                     <span><?php echo $comment['Content'] ?></span>
                 </div>
                 <div class="interac">
-                    <i class="fa-regular fa-thumbs-up"></i> 
+                    <i class="fa-regular fa-thumbs-up"></i>
                     <i class="fa-regular fa-thumbs-down dislike"></i>
-                    Phản hồi 
+                    Phản hồi
                     <i class="fa-solid fa-reply"></i>
                 </div>
+
+                <form action="" method="POST" class="form_comment_reply">
+                    <div class="avatas">
+                        Đ
+                    </div>
+                    <div class="form_comment-input">
+                        <input type="text" class="form_comment-input-text" name="content_val" placeholder="Nhập nhận xét của bạn..">
+                        <input class="value" name="star" type="hidden" value="0">
+                        <div class="form_comment-input-btn-reply">
+                            <div class="star_comment">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div><button>Cancel</button></div>
+                            <div><input type="submit" value="Confirm" name="tienhanhcomment"></div>
+                        </div>
+                    </div>
+                </form>
+
                 <!-- Reply -->
                 <?php $sql_reply = "SELECT * FROM `comment`  JOIN `account` WHERE `comment`.`Id User` = `account`.`id` 
                     and `comment`.`Id Product`=$id and `comment`.`Reply`=" . $comment['Id'];
@@ -197,7 +219,7 @@ if (isset($_POST['tienhanhcomment'])) {
 
     <!-- Scripts -->
     <?php include('scripts.php') ?>
-    <script src="./js/detail.js"></script>
+    <script src="./js/details.js"></script>
 
 </body>
 

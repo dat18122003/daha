@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5fa;
+}
+
+.container {
+    margin: 80px auto;
+    background-color: #f5f5fa;
+}
+
+.controler {
+    background-color: white;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.controler ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: rgb(128, 128, 137);
+    cursor: pointer;
+}
+
+.controler ul li.activate {
+    position: relative;
+    color: #219150;
+}
+
+.controler ul li.activate::after {
+    content: "";
+    border-bottom: 2px solid #219150;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.content {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.list_order {
+    display: none;
+}
+
+.list_order.activate {
+    display: block;
+}
+
+.item_order {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.activate_order {
+    padding-bottom: 10px;
+    font-size: 14px;
+    border-bottom:0.5px solid #999;
+}
+
+.activate_order i{
+    margin-right: 10px;
+}
+
+.content_order {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-bottom:0.5px solid #999;
+    position: relative;
+}
+
+.content_order .number {
+    font-size: 14px;
+    position: absolute;
+    bottom: 15px;
+    left: 100px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #219150;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_order img{
+    width: auto;
+    height: 90px;
+    border: 0.5px solid #999;
+}
+
+.content_order .text{
+    width: 60%;
+    font-size: 16px;
+}
+
+.content_order .price{
+    width: 20%;
+    font-size: 14px;
+    text-align: end;
+}
+
+.footer_order {
+    text-align: end;
+    padding-top: 14px;
+}
+
+.footer_order .total_money {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.footer_order .total_money .money {
+    color: black;
+}
+
+.footer_order a, .footer_order input, .footer_order button  {
+    border: 1px solid #219150;
+    color: #219150;
+    font-size: 14px;
+    background-color: white;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.none_order {
+    background-color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.none_order img {
+    margin: 25px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.none_order p {
+    margin: 0 auto;
+    font-size: 16px;
+}

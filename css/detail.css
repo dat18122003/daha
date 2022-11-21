@@ -377,7 +377,7 @@ html {
 
 }
 
-.form_comment {
+.form_comment, .form_comment_reply {
     display: flex;
     justify-content: space-between;
 }
@@ -445,4 +445,56 @@ html {
 
 .form_comment-input-btn input.activate {
     background-color: #219150;
+}
+
+.form_comment_reply {
+    margin-left:100px ;
+    display: flex;
+}
+.form_comment_reply .avatas {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.form_comment_reply input[type='text'] {
+    border-bottom: 0.5px solid #999 ;
+    font-size: 14px;
+    padding: 3px;
+    width: 1200px;
+}
+
+.form_comment-input-btn-reply {
+    margin-top: 14px;
+    text-align: end;
+}
+
+.form_comment-input-btn-reply button, .form_comment-input-btn-reply input {
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #219150;
+    color: white;
+    padding: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form_comment-input-btn-reply div {
+    display: inline;
+}
+
+
+.form_comment-input-btn-reply .star_comment i {
+    border: 1.5px solid black;
+    font-size: 16px;    
+    color: white;
+    background-color: #999999;
+    cursor: pointer;
+    padding:3.5px;
+}
+
+.form_comment-input-btn-reply .star_comment i.activate {
+    color: #FFCC00;
 }

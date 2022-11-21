@@ -45,9 +45,9 @@ Menu_Control.forEach((btn)=> {
 
 // control star
 
-let star = document.querySelectorAll('form .star_comment i')
+let star = document.querySelectorAll('.form_comment .star_comment i')
 
-let val_star = document.querySelector('form .value')
+let val_star = document.querySelector('.form_comment .value')
 
 for(let i=0;i<star.length;i++) {
   star[i].addEventListener('click', function() {

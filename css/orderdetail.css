@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5fa;
+}
+
+.container {
+    margin: 80px 300px;
+    background-color: #f5f5fa;
+}
+
+.title, .time{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.time {
+    text-align: end;
+}
+
+.time p {
+    color: #999;
+    display: inline-block;
+}
+
+.content {
+    background-color: white;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+
+thead tr td {
+    text-align: start;
+    color: rgb(128, 128, 137);
+    font-size: 16px ;
+    height: 45px;
+    border-bottom:1px solid #999;
+    
+}
+
+
+.product {
+    display: flex;
+}
+
+.product img {
+    width: auto;
+    height: 90px;
+    margin-right: 20px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 20px 15px;
+    font-size: 14px;
+}
+
+tbody tr td {
+    border-bottom: 1px solid #999;
+    vertical-align: top;
+}
+
+
+.end {
+    text-align: end;
+}
+
+.end1 p {
+    color: #787878;
+}
+
+.price1 {
+    color: red;
+    font-size: 16px;
+}
+
+.back {
+    font-size: 14px;
+    padding: 15px 20px;
+}
+
+.back i {
+    margin-right: 10px;
+}
